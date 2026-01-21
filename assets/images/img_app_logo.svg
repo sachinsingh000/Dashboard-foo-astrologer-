@@ -1,0 +1,59 @@
+Altitude()Z
+
+    move-result v10
+
+    .line 712
+    .local v10, "hasAltitude":Z
+    invoke-virtual {v0}, Landroid/location/Location;->getAltitude()D
+
+    move-result-wide v11
+
+    .line 713
+    .local v11, "altitude":D
+    invoke-virtual {v0}, Landroid/location/Location;->hasSpeed()Z
+
+    move-result v13
+
+    .line 714
+    .local v13, "hasSpeed":Z
+    invoke-virtual {v0}, Landroid/location/Location;->getSpeed()F
+
+    move-result v14
+
+    .line 715
+    .local v14, "speed":F
+    invoke-virtual {v0}, Landroid/location/Location;->hasBearing()Z
+
+    move-result v15
+
+    .line 716
+    .local v15, "hasBearing":Z
+    move/from16 v16, v10
+
+    .end local v10    # "hasAltitude":Z
+    .local v16, "hasAltitude":Z
+    invoke-virtual {v0}, Landroid/location/Location;->getBearing()F
+
+    move-result v10
+
+    .line 717
+    .local v10, "bearing":F
+    invoke-virtual {v0}, Landroid/location/Location;->hasAccuracy()Z
+
+    move-result v17
+
+    .line 718
+    .local v17, "hasAccuracy":Z
+    move/from16 v18, v13
+
+    .end local v13    # "hasSpeed":Z
+    .local v18, "hasSpeed":Z
+    invoke-virtual {v0}, Landroid/location/Location;->getAccuracy()F
+
+    move-result v13
+
+    .line 719
+    .local v13, "accuracy":F
+    invoke-virtual {v0}, Landroid/location/Location;->hasVerticalAccuracy()Z
+
+    move-result v19
